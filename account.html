@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<style>
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#e0ece4;
+}
+header{
+    height:100%;
+    width:100%;
+    background-image:url('account.jpeg');
+    background-repeat:no-repeat:
+    display:;
+    justify-content-center;
+    align-items:center;
+    user-select:none;
+    margin-top:100px;
+}
+.main-header{
+    text-align:center;
+    transition:0.5s;
+}
+.main-header h1{
+    font-size:3rem;
+    color:red;
+}
+.mian-header hr{
+    width:50%;
+    margin:auto;
+    padding:5px;
+    background:#E1F06C;
+    border:none;
+}
+.main-header h3{
+    font-size:2rem;
+    margin:20px;
+    color:yellow;
+}
+.main-header input{
+    width:90%;
+    padding:1rem;
+    margin:20px 0px;
+    border:none;
+    border-bottom:1px solid #5F5FB0;
+    background:transparent;
+    outline:none;
+    color:red;
+}
+.main-header button{
+    padding:1rem 3rem;
+    font-size:1.2rem;
+    background:pink;
+    color:indigo;
+    border:none;
+    border-radius:25px;
+}
+.main-header button:hover{
+    background-color:black;
+}
+a{
+    color:red;
+    font-size:23px;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<header>
+<a href="index.html">Home</a>
+<div class="main-header">
+<h1>Loging</h1>
+<hr/>
+<form name="login">
+<h3>Let's signin and see what's  new on that side.</h3>
+<p><input type="text" placeholder="Username" name="userid"></p>
+<p><input type="password" placeholder="Password" name="password"></p>
+<p><input type="button" onclick="check(this.form)" value="Click me"/>
+</form>
+</div>
+</header>
+<script language="javascript">
+    function check(form){
+        if(form.userid.value=="mohan" && form.password.value=="mishra")
+        {
+            window.open('index.html')
+        }
+        else{
+            alert("Something is wrong! Try again")
+        }
+    }
+</script>
+</body>
+</html>
